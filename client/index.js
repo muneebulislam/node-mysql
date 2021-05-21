@@ -1,4 +1,7 @@
 document.addEventListener('DomContentLoaded', function(){
+    fetch('http://localhost:5000/getAll')
+    .then(res => res.json())
+    .then(data => console.log(data))
     loadHTMLTable([]);
 })
 
